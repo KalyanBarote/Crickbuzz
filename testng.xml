@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="ChromeTest">
+  <parameter name="Browser" value="chrome"></parameter>
+    <parameter name="Country" value="Melbourne Stars vs Brisbane Heat"></parameter>
+    <classes>
+      <class name="cricbuzz.Crickbuzz"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="EdgeTest">
+  <parameter name="Browser" value="edge"></parameter>
+    <parameter name="Country" value="MI Cape Town vs Sunrisers Eastern Cape"></parameter>
+    <classes>
+      <class name="cricbuzz.Crickbuzz"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test  name="FirefoxTest">
+  <parameter name="Browser" value="firefox"></parameter>
+    <parameter name="Country" value="Paarl Royals vs Durban Super Giants"></parameter>
+    <classes>
+      <class name="cricbuzz.Crickbuzz"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
